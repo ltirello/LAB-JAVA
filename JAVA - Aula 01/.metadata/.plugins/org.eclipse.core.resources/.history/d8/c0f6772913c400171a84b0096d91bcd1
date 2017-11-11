@@ -1,0 +1,39 @@
+package br.com.cursos.servlet;
+
+import java.io.IOException;
+import java.io.PrintWriter;
+
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+
+	public class ClienteServlet extends HttpServlet {
+	
+	private static final long serialVersionUID = 1L;
+	
+	private List<String> clientes
+
+	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+	
+		String filtro = request.getParameter("filtro");
+		List<String> resultado = filtrarClientes(filtro);
+		
+		PrintWriter writer = resp.getWriter();
+		
+		writer.write("<html><body>");
+		writer.write("<ul>");
+		for (String item : cliente) {
+			writer.write("<li>" + item + "</li>");
+			}
+		writer.write("</ul>");
+		writer.write("</body></html>");
+	}
+
+
+	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+		super.doPost(req, resp);
+	}
+
+}

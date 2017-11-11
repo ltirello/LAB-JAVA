@@ -1,0 +1,35 @@
+package br.com.cliente.dao;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import br.com.cliente.model.Cliente;
+
+public class ClienteDao {
+	
+	private List<Cliente> clientes; 
+	
+	public ClienteDao() {
+	initMock();
+	}
+	
+	private void iniMock() {
+	
+		clientes = new ArrayList<Cliente>();
+		
+		Cliente cliente1 = new Cliente();
+		cliente1.SetId(1);
+		cliente1.setnome("Jan");
+		cliente1.setSobreNome("Nascimento");
+		cliente1.setTelefone("9999999");
+		
+		cliente.add(cliente1);
+		
+		clientes.add(new cliente(1, "JANDEILSON", "Nascimento", 30, "99999"));
+	}
+
+		public List<Clientes> obterTodosClientes()  {
+			return this.clientes;
+		}
+	
+}

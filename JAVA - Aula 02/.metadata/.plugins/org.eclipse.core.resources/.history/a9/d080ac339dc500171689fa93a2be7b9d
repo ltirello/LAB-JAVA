@@ -1,0 +1,20 @@
+package br.com.cursos.tipos;
+
+public class Tipos { 
+	int x;
+	int y;
+	
+	public Tipos(){
+		
+		
+		x = 50;
+		y = 40;
+				
+		
+	}
+	
+	
+	
+		
+
+}

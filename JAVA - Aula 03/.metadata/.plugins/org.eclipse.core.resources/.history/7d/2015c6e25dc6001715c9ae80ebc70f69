@@ -1,0 +1,24 @@
+package br.com.cliente.model;
+
+public class Cliente {
+
+	private int id;
+	
+	private String nome;
+	
+	private String sobreNome;
+	
+	private int idade;
+	
+	private String telefone;
+
+	public int get( ) {
+		return this.id;
+	}
+	
+	public void setId(int id) {
+				
+	}
+	
+	
+}

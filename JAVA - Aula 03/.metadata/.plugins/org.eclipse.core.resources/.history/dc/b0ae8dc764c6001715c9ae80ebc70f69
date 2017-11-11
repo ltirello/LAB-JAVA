@@ -1,0 +1,23 @@
+package br.com.cliente.dao;
+
+
+import java.util.Array 
+
+public class ClienteDao {
+
+	
+	private void iniMock() {
+		
+		clientes = new ArrayList<Cliente>();
+		
+		Cliente cliente1 = new Cliente();
+		cliente1.SetId(1);
+		cliente1.setnome("Jan");
+		cliente1.setSobreNome("Nascimento");
+		cliente1.setTelefone("9999999");
+		
+		cliente.add(cliente1);
+		
+	
+	}
+}

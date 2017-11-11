@@ -1,0 +1,18 @@
+package br.com.cursos.servlet;
+
+import java.io.PrintWriter;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+public class LoginServlet extendsHttpServlet {
+	
+		private static final long serialVersionUID = 
+	
+		@Override
+		protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletEx
+			PrintWriter writer = resp.getWriter();
+			writer.write("html><body> Fiz um Get</body></html>");
+}
+		
+

@@ -1,0 +1,57 @@
+package br.com.cliente.model;
+
+import javax.print.DocFlavor.STRING;
+
+public class Cliente {
+
+	private int id;
+	
+	private String nome;
+	
+	private String sobreNome;
+	
+	private int idade;
+	
+	private String telefone;
+
+	public int getId() {
+		return this.id;
+	}
+	
+	public void setId(int id) {
+		this.id = id;		
+	}
+	
+	public String getNome( ) {
+		return this.nome;
+	}
+	
+	public void setNome(String nome) {
+		this.nome = nome;		
+	}
+	
+	public String getSobreNome( ) {
+		return this.sobreNome;
+	}
+	
+	public void setSobreNome(String sobrenome) {
+		this.sobreNome = sobreNome;
+	}
+	public int getidade( ) {
+		return this.idade;
+	}
+	
+	public void setidade(int idade) {
+		this.idade = idade;
+	}
+	
+	public String getNomeCompleto() {
+		
+		if(!this.nome.equals("") && !this.sobreNome.equals("")) {
+			return this.nome + " " + this.sobreNome;
+			}
+		return "";
+	}
+	
+	
+}
